@@ -39,7 +39,7 @@ alien -i --scripts dremio-odbc-1.4.2.1003-1.x86_64.rpm
 rm -f dremio-odbc-1.4.2.1003-1.x86_64.rpm
 pip install pyodbc pandas dremio_client[full]
 wget -O $REDASH_BASE_PATH/redash/query_runner/dremio.py "https://raw.githubusercontent.com/Rodrigonavarro23/redash/tree/dremio-driver/redash/query_runner/dremio.py"
-wget -O $REDASH_BASE_PATH/client/dist/images/db-logos/dremio_odbc.png "https://raw.githubusercontent.com/FARMTROUGH/DremioDSforRedash/master/dremio_odbc.png"
-wget -O $REDASH_BASE_PATH/client/app/assets/images/db-logos/dremio_odbc.png "https://raw.githubusercontent.com/FARMTROUGH/DremioDSforRedash/master/dremio_odbc.png"
+wget -O $REDASH_BASE_PATH/client/dist/images/db-logos/dremio.png "https://raw.githubusercontent.com/FARMTROUGH/DremioDSforRedash/master/dremio_odbc.png"
+wget -O $REDASH_BASE_PATH/client/app/assets/images/db-logos/dremio.png "https://raw.githubusercontent.com/FARMTROUGH/DremioDSforRedash/master/dremio_odbc.png"
 # Make sure this is the only entry for REDASH_ADDITIONAL_QUERY_RUNNERS.  If you have others then update env manually
 echo "export REDASH_ADDITIONAL_QUERY_RUNNERS=redash.query_runner.python,redash.query_runner.dremio_odbc" >> $REDASH_BASE_PATH/.env
