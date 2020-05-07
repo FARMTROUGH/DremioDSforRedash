@@ -10,7 +10,7 @@ For more details and documentation on Dremio go to their [website](https://www.d
 ### Install the Driver into Redash.io
 #### Run this for an existing instance if you aren't using our custom Docker image
 ```
-wget -O - https://raw.githubusercontent.com/Dezota/DremioDSforRedash/master/install_ubuntu.sh | bash
+wget -O - https://raw.githubusercontent.com/FARMTROUGH/DremioDSforRedash/master/install_ubuntu.sh | bash
 ```
 
 ### Get started
