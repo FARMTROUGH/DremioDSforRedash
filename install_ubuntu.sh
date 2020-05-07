@@ -32,7 +32,7 @@
 
 export REDASH_BASE_PATH=/app
 ### refresh repos for current package versions
-apt-get update && apt-get upgrade
+apt-get update && apt-get upgrade -y
 apt-get install -y alien unixodbc unixodbc-dev
 wget https://download.dremio.com/odbc-driver/1.4.2.1003/dremio-odbc-1.4.2.1003-1.x86_64.rpm
 alien -i --scripts dremio-odbc-1.4.2.1003-1.x86_64.rpm
